@@ -1,0 +1,42 @@
+Variabel dan Tipe Data pada Program Layanan The Rahayu Spa
+
+Variabel adalah sebuah tempat menyimpan sebuah nilai. Sementara tipe data adalah jenis nilai yang akan tersimpan dalam variabel.
+Tipe data dituliskan terlebih dahulu lalu dilanjutkan dengan variabelnya. 
+
+Tipe data yang terdapat pada program :
+1) Char
+Char adalah tipe data yang berisi 1 huruf atau 1 karakter.
+2) Float
+Float adalah tipe data yang berupa bilangan pecahan.
+3) Integer
+Integera adalah tipe data yang berupa angka atau bilangan bulat.
+4) Void
+Void adalah tipe data khusus untuk menyatakan tidak ada data. 
+5) Structure atau struct
+Structure atau struct adalah kumpulan dari beberapa variabel dengan beragam tipe data yang dibungkus dalam satu variabel
+
+Variabel dan Tipe Data yang terdapat pada program :
+username [20] = char
+password [20] = char
+nama[100] = char
+password[100] = char
+nama[50] = char
+
+bulan = int
+alpha = int
+total = int
+pokok = int
+pinjaman = int
+
+judul = void  
+header = void 
+menuCostumer = void
+menuJasa = void
+
+Data = struct
+Data pengguna = struct
+pegawai = struct
+kariawan = struct
+
+
+

@@ -14,6 +14,8 @@ Integera adalah tipe data yang berupa angka atau bilangan bulat.
 Void adalah tipe data khusus untuk menyatakan tidak ada data. 
 5) Structure atau struct
 Structure atau struct adalah kumpulan dari beberapa variabel dengan beragam tipe data yang dibungkus dalam satu variabel
+6) String
+String adalah pada sebuah array satu dimensi yang berisi kumpulan dari huruf atau karakter dan diakhiri dengan karakterk kosong \0 (null).
 
 Variabel dan Tipe Data yang terdapat pada program :
 username [20] = char

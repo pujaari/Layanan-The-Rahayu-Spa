@@ -132,7 +132,7 @@ void login(void){
 	        	}
 	    }
 	}
-	else if(pilihPengguna == 2){ //jika memilih ini maka akan masuk ke login costumer
+	else if(pilihPengguna == 2){ //jika memilih ini maka akan masuk ke login pegawai
 		loginPegawai:
 		system("cls");
 		char usernamePegawai [50];

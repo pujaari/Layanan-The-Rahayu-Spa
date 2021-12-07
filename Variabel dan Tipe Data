@@ -22,23 +22,19 @@ username [20] = char
 password [20] = char
 nama[100] = char
 password[100] = char
-nama[50] = char
+usernamePegawai [50] = char
+passwordPegawai [50] = char
 
-bulan = int
-alpha = int
-total = int
-pokok = int
-pinjaman = int
+pilihPengguna = int
+opsi = int
+loginFailed = int
 
-judul = void  
 header = void 
 menuCostumer = void
-menuJasa = void
+menuPegawai = void
 
-Data = struct
 Data pengguna = struct
-pegawai = struct
-kariawan = struct
+
 
 
 

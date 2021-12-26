@@ -22,8 +22,6 @@
 #include "tampilkanRincianJasa3.h"
 #include "tampilkanRincianJasa4.h"
 #include "tampilkanRincianJasa5.h"
-#include "tampilkanRincianJasa6.h"
-#include "tampilkanRincianJasa7.h"
 #include "daftarTransaksi.h"
 #include "menuPegawai.h"
 #include "menurekomen.h"

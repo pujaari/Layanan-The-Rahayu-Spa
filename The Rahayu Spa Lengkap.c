@@ -10,11 +10,11 @@
 void judul (void);
 //fungsi untuk menampilkan header program
 void header(void);
-//fungsi untuk masuk ke menu utama apabila sebelumnya di login memilih customer
+//fungsi untuk masuk ke menu utama apabila sebelumnya di login memilih pelanggan
 void menuPelanggan(void);
 //fungsi untuk menampilkan menu jasa dan paket yang tersedia di spa
 void menuJasa(void);
-//fungsi untuk menampilan menu bantuan apabila user kesulitan dan tidak menegerti dalam penggunaan program
+//fungsi untuk menampilan menu bantuan apabila user kesulitan dan tidak mengerti dalam penggunaan program
 void menuBantuan(void);
 //fungsi untuk menampilkan apabila input salah
 void inputSalah(void);
@@ -28,11 +28,11 @@ void tampilkanRincianJasa3(void);
 void tampilkanRincianJasa4(void);
 //fungsi untuk menampilkan rincian jasa 5
 void tampilkanRincianJasa5(void);
-//fungsi untuk mencetak kuitansi pembayaran DP apabila customer sudah selesai memesan
+//fungsi untuk mencetak kuitansi pembayaran DP apabila pelanggan sudah selesai memesan
 void cetakKuitansi(const char * namaPelanggan,const char * noHp, const char * alamat, const char * namaJasa[100][30], int totaljumlahharga, int totalrDp, const char * waktu1, const char * waktu2, int i, int paket);
-//fungsi untuk login sebagai pengguna(customer) atau staff
+//fungsi untuk login sebagai pengguna(pelanggan) atau pegawai
 void login(void);
-//fungsi untuk menampilkan menu apabila login sebagai pegawai/staff
+//fungsi untuk menampilkan menu apabila login sebagai pegawai
 void menuPegawai(void);
 //fungsi untuk menampilkan menu kasir untuk menyelesaikan pembayaran
 void menuKasir(void);
@@ -46,7 +46,7 @@ void tampilkansisapembayaran(int sisapembayaran);
 int hitungkembali(int pembayaran, int totalhargakeseluruhan);
 //fungsi untuk menampilkan kembali dan akhir dari transaksi
 void tampilkankembali(int kembali, int pembayaran, int sisapembayaran, int totalhargakeseluruhan);
-//fungsi untuk mencetak nota pembayaran customer
+//fungsi untuk mencetak nota pembayaran pelanggan
 void cetaknota(const char * namaPelanggan, const char * noHp, int i, int jumlah[100], int harga[100], int totalharga[100], char namapaket[100][30], int totalhargakeseluruhan, int DP, int pembayaran, int kembali, int paket, int sisapembayaran);
 //fungsi untuk mengkonfirmasi pemesanan
 void konfirmasiPemesanan(void);
@@ -56,7 +56,7 @@ void rulesMember(void);
 void pendaftaranMember(void);
 //fungsi untuk menampilkan rekomendasi pembelian paket spa
 void menurekomen(void);
-//fungsi untuk mwnampilkan informasi tentang Spa kami
+//fungsi untuk mwnampilkan informasi tentang The Rahayu Spa
 void tentangKami(void);
 //fungsi mencetak pembayaran
 void cekPembayaran(const char * bank, int noRekening, const char * nama, int jumlahTransfer);
@@ -1223,38 +1223,38 @@ void cetaknota(const char * namaPelanggan, const char * noHp, int i, int jumlah[
 	char alamat [250];
 	char telp [13];
 	printf ("\n\n\n\n\n\n\n");
-	printf ("=============================================\n");
-    printf ("|             'THE RAHAYU SPA'              |\n");
-    printf ("|===========================================|\n");
-	printf ("|                  RULES                    | \n");
-	printf ("|                                           | \n");
-	printf ("|1. Sudah pernah melakukan layanan spa di   | \n");
-	printf ("|   Rahayu Spa sebelumnya                   | \n");
-	printf ("|2. Member bersifat pribadi dan tidak bisa  | \n");
-	printf ("|   dipindah tangankan                      | \n");
-	printf ("|3. Setiap anggota hanya diperbolehkan      | \n");
-	printf ("|   memiliki satu akun keanggotaan dan akan | \n");
-	printf ("|   kartu keanggotaan                       | \n");
-	printf ("|4. Untuk mendaftar menjadi member tidak    | \n");
-	printf ("|   dikenakan biaya apapun                  | \n");
-	printf ("|5. Terdapat 2 jenis member dalam Rayuri Spa| \n");
-	printf ("|   yaitu Member Silver dengan masa aktif 6 | \n");
-	printf ("|   bulan dan Member Gold dengan masa aktif | \n");
-	printf ("|   1 tahun                                 | \n");
-	printf ("|6. Jika masa keanggotaan sudah habis maka  | \n");
-	printf ("|   anggota bisa mendaftar kembali atau     | \n");
-	printf ("|   selesai menjadi member di Rahayu Spa    | \n");
-	printf ("********************************************* \n");
-	printf ("********************************************* \n");
-	printf ("|            KEUNTUNGAN MEMBER              | \n");
-	printf ("|                                           | \n");
-	printf ("|(1) Akan mendapat potongan setiap melakukan| \n");
-	printf ("|    layanan di Rahayu Spa                  | \n");
-	printf ("|(2) Akan mendapat bonus maupun promo setiap| \n");
-	printf ("|    hari-hari penting                      | \n");
-	printf ("|(3) Dapat mengikuti program-program reward | \n");
-	printf ("|    lainnya                                | \n");
-	printf ("********************************************* \n");
+	printf ("==============================================\n");
+    printf ("|               'THE RAHAYU SPA'             |\n");
+    printf ("|============================================|\n");
+	printf ("|                    RULES                   | \n");
+	printf ("|                                            | \n");
+	printf ("|1. Sudah pernah melakukan layanan spa di    | \n");
+	printf ("|   Rahayu Spa sebelumnya                    | \n");
+	printf ("|2. Member bersifat pribadi dan tidak bisa   | \n");
+	printf ("|   dipindah tangankan                       | \n");
+	printf ("|3. Setiap anggota hanya diperbolehkan       | \n");
+	printf ("|   memiliki satu akun keanggotaan dan akan  | \n");
+	printf ("|   kartu keanggotaan                        | \n");
+	printf ("|4. Untuk mendaftar menjadi member tidak     | \n");
+	printf ("|   dikenakan biaya apapun                   | \n");
+	printf ("|5. Terdapat 2 jenis member dalam The Rahayu | \n");
+	printf ("|   Spa yaitu Member Silver dengan masa aktif| \n");
+	printf ("|   6 bulan dan Member Gold dengan masa aktif| \n");
+	printf ("|   1 tahun                                  | \n");
+	printf ("|6. Jika masa keanggotaan sudah habis maka   | \n");
+	printf ("|   anggota bisa mendaftar kembali atau      | \n");
+	printf ("|   selesai menjadi member di The Rahayu Spa | \n");
+	printf ("********************************************** \n");
+	printf ("********************************************** \n");
+	printf ("|            KEUNTUNGAN MEMBER               | \n");
+	printf ("|                                            | \n");
+	printf ("|(1) Akan mendapat potongan setiap melakukan | \n");
+	printf ("|    layanan di Rahayu Spa                   | \n");
+	printf ("|(2) Akan mendapat bonus maupun promo setiap | \n");
+	printf ("|    hari-hari penting                       | \n");
+	printf ("|(3) Dapat mengikuti program-program reward  | \n");
+	printf ("|    lainnya                                 | \n");
+	printf ("********************************************** \n");
  	printf ("\tApa yang selanjutnya akan dilakukan? \n");
  	printf ("	1. Lanjutkan Pendaftaran Member \n");
  	printf ("	2. Kembali ke Menu Utama \n");
@@ -1463,20 +1463,20 @@ void penggajianPegawai (void){
 	int masaKerja;
 	int i;
 	int lanjutan;
-	printf("\n\n========================================\n");
-	printf("|     PENGGAJIAN KARYAWAN RAYURI SPA   |\n");
-	printf("========================================\n\n");
-	printf("========================================\n");
+	printf("\n\n===========================================\n");
+	printf("|    PENGGAJIAN KARYAWAN THE RAHAYU SPA   |\n");
+	printf("===========================================\n\n");
+	printf("===========================================\n");
 	printf(" MASUKKAN JUMLAH KARYAWAN YANG INGIN DIGAJI : ");
 	scanf("%d", &jumlah);
-	printf("============================================\n");
+	printf("===========================================\n");
 
 	for(i=0;i<jumlah; i++){
 		printf ("\n");
 		printf("MASUKKAN NAMA KARYAWAN KE-%d: ", i+1);
 		fflush(stdin);
 		gets (gaji[i].nama);
-		printf("==================================\n");
+		printf("========================================\n");
 		printf("MASUKKAN GAJI POKOK KARYAWAN: Rp. ");
 		scanf("%d", &gaji[i].pokok);
 		printf("MASUKKAN MASA KERJA(BULAN)  : ");
@@ -1493,7 +1493,7 @@ void penggajianPegawai (void){
 		}
 		printf("MASUKKAN PINJAMAN           : ");
 		scanf("%d", &gaji[i].pinjaman);
-		printf("===================================\n");
+		printf("========================================\n");
 	}
 	printf("\n\n\n\t\t\t\t\t            		         =======  GAJI KARYAWAN ======= \n");
     printf("\t\t\t\t=======================================================================================================\n");

@@ -407,9 +407,6 @@ void menuJasa(void){
 			tampilkanRincianJasa5();
 			getch();
 	   	}
-	   	else if(menuJasa[i]==6){
-            menuPelanggan();
-	   	}
 	   	else{
 	   		inputSalah();
 	   		goto menuJasa;
@@ -508,42 +505,42 @@ void tentangKami(void){
 	int tentangKami;
 	printf ("\n\n\n\n\n\n\n\n");
     printf ("\t\t\t\t\t\t  =================================================================\n");
-    printf ("\t\t\t\t\t\t  *                           'THE RAHAYU SPA'                    *\n");
+    printf ("\t\t\t\t\t\t  *                         'THE RAHAYU SPA'                      *\n");
     printf ("\t\t\t\t\t\t  *===============================================================*\n");
-    printf ("\t\t\t\t\t\t  *                                ABOUT US                       *\n");
+    printf ("\t\t\t\t\t\t  *                             ABOUT US                          *\n");
 	printf ("\t\t\t\t\t\t  ================================================================*\n");
 	printf ("\t\t\t\t\t\t  *    Rahayu SPA telah berdiri sejak tahun 2010 yang merupakan   *\n");
 	printf ("\t\t\t\t\t\t  *  tempat perawatan dan relaksasi dengan konsep natural modern  *\n");
 	printf ("\t\t\t\t\t\t  *   SPA. SPA yang modern dari segi design interior dan produk,  *\n");
-	printf ("\t\t\t\t\t\t  *      tetapi tetap menggunakan banyak unsur yang alami dan     *\n");
+	printf ("\t\t\t\t\t\t  *       tetapi tetap menggunakan banyak unsur alami serta       *\n");
 	printf ("\t\t\t\t\t\t  *                          tradisional.                         *\n");
 	printf ("\t\t\t\t\t\t  *                                                               *\n");
-	printf ("\t\t\t\t\t\t  * Sense menyediakan pengalaman spa & reflexology authentik yang *\n");
-	printf ("\t\t\t\t\t\t  * memberikan manfaat maksimal bagi seluruh tubuh dan jiwa  atau *\n");
-	printf ("\t\t\t\t\t\t  *     terapi seluruh panca indera. Dimana hal ini merupakan     *\n");
-	printf ("\t\t\t\t\t\t  * philosophy dari penggunaan nama 'Sense' yang  mengandung arti *\n");
-	printf ("\t\t\t\t\t\t  *                   panca indera/perasaan.                      *\n");
+	printf ("\t\t\t\t\t\t  *   Rahayu Spa menyediakan pengalaman spa & refleksi authentik  *\n");
+	printf ("\t\t\t\t\t\t  *  yang memberikan manfaat terbaik bagi seluruh tubuh dan jiwa. *\n");
+	printf ("\t\t\t\t\t\t  *  Spa authentik memberi ketenangan jiwa, menjernihkan pikiran, *\n");
+	printf ("\t\t\t\t\t\t  *  Rahasia sehat dan awet muda untuk kehidupan yang senantiasa  *\n");
+	printf ("\t\t\t\t\t\t  *                         penuh kedamaian.                      *\n");
 	printf ("\t\t\t\t\t\t  =================================================================\n");
 	printf ("\n");
-	printf ("\t\t\t\t\t\t\t     *** THERAPHY THAT WILL BE IN THE RAHAYU SPA ***\n");
+	printf ("\t\t\t\t\t\t\t***** THERAPHY THAT WILL BE IN THE RAHAYU SPA *****\n");
 	printf ("\t\t\t\t\t\t  *****************************************************************\n");
-	printf ("\t\t\t\t\t\t  *  Terapi indera sentuhan dengan teknik  pijatan/sentuhan yang  *\n");
-	printf ("\t\t\t\t\t\t  * merilekskan dan  menghilangkan kelelahan tubuh yang dilakukan *\n");
+	printf ("\t\t\t\t\t\t  *  Terapi indera motorik dengan teknik  pijatan/sentuhan yang   *\n");
+	printf ("\t\t\t\t\t\t  *  merilekskan serta  menghilangkan kelelahan tubuh, dilakukan  *\n");
 	printf ("\t\t\t\t\t\t  *       oleh terapis yang berpengalaman dan profesional         *\n");
 	printf ("\t\t\t\t\t\t  *                                                               *\n");
-	printf ("\t\t\t\t\t\t  *Terapi indera pendengaran dengan musik yang menenangkan pikiran*\n");
+	printf ("\t\t\t\t\t\t  *  Terapi indera pendengaran dengan musik yang menenangkan jiwa *\n");
 	printf ("\t\t\t\t\t\t  *                                                               *\n");
-	printf ("\t\t\t\t\t\t  *  Terapi indera penglihatan dengan  dekor interior sense yang  *\n");
-	printf ("\t\t\t\t\t\t  *   bernuansa tropis  minimalis serta bernuansa alam sehingga   *\n");
-	printf ("\t\t\t\t\t\t  *            menciptakan suasana nyaman dan relax               *\n");
+	printf ("\t\t\t\t\t\t  *  Terapi indera penglihatan dengan dekor interior tradisional  *\n");
+	printf ("\t\t\t\t\t\t  *       bernuansa tropis  minimalis serta alami sehingga        *\n");
+	printf ("\t\t\t\t\t\t  *   menciptakan suasana nyaman dan relax bagi pikiran dan jiwa  *\n");
 	printf ("\t\t\t\t\t\t  *                                                               *\n");
 	printf ("\t\t\t\t\t\t  *  Terapi indera penciuman dengan wangi aroma theraphy di area  *\n");
-	printf ("\t\t\t\t\t\t  *                 sense spa & reflexology                       *\n");
+	printf ("\t\t\t\t\t\t  *                 titik vital, spa & refleksi                   *\n");
 	printf ("\t\t\t\t\t\t  *                                                               *\n");
 	printf ("\t\t\t\t\t\t  *   Terapi indera perasa dimana setiap customer akan disuguhi   *\n");
-	printf ("\t\t\t\t\t\t  *  minuman tradisional atau modern yang baik bagi kesehatan di  *\n");
-	printf ("\t\t\t\t\t\t  *                      akhir perawatan                          *\n");
-    printf ("\t\t\t\t\t\t  =================================================================\n\n\n");
+	printf ("\t\t\t\t\t\t  *     minuman tradisional dengan olahan alami terbaik bagi      *\n");
+	printf ("\t\t\t\t\t\t  *                      kesehatan di akhir perawatan             *\n");
+    printf ("\t\t\t\t\t\t  *****************************************************************\n\n\n");
 	printf ("\t\t\t\t\t\t[1] Pesan Sekarang\n");
 	printf ("\t\t\t\t\t\t[2] Kembali Ke Halaman Utama\n\n");
 	printf ("\t\t\t\t\t\tPilih : ");
@@ -586,19 +583,19 @@ void menuBantuan(void){
 		system("cls");
 		header();
  		int tentangProgram;
-        printf ("=======================================================\n");
-        printf ("|                   'THE RAHAYU SPA'                  |\n");
-        printf ("|=====================================================|\n");
-   		printf ("|Program ini bertujuan untuk memesan SPA dengan mudah.|\n");
-   		printf ("|   Pemesanan spa ini diawali dengan sistem booking   |\n");
-   		printf ("| terlebih dahulu. Setelah memesan maka customer akan |\n");
-   		printf ("|    membayar dp terlebih dahulu agar pesanan tidak   |\n");
-   		printf ("|    dibatalkan lalu pada saat hari yang ditentukan   |\n");
-   		printf ("|customer akan membayar penuh. Program ini dibuat agar|\n");
-   		printf ("|    customer tidak lama menunggu antrian saat ingin  |\n");
-   		printf ("|   melakukan spa sehingga tidak banyak yang komplain |\n");
-   		printf ("|            terhadap pelayanan di spa.               |\n");
-		printf ("|=====================================================|\n");
+        printf ("========================================================\n");
+        printf ("|                   'THE RAHAYU SPA'                   |\n");
+        printf ("|======================================================|\n");
+   		printf ("|Program ini bertujuan untuk memesan SPA dengan mudah. |\n");
+   		printf ("|   Pemesanan spa ini diawali dengan sistem booking    |\n");
+   		printf ("| terlebih dahulu. Setelah memesan maka pelanggan akan |\n");
+   		printf ("|    membayar dp terlebih dahulu agar pesanan tidak    |\n");
+   		printf ("|    dibatalkan lalu pada saat hari yang ditentukan    |\n");
+   		printf ("|pelanggan akan membayar penuh. Program ini dibuat agar|\n");
+   		printf ("|    pelanggan tidak lama menunggu antrian saat ingin  |\n");
+   		printf ("|   melakukan spa sehingga tidak banyak yang komplain  |\n");
+   		printf ("|            terhadap pelayanan di spa.                |\n");
+		printf ("|======================================================|\n");
    		getch ();
    		menuBantuan();
  		// Penjelasan tentang tata cara Program pemesanan SPA
@@ -630,7 +627,7 @@ void menuBantuan(void){
 		printf ("|                                                                                 |\n");
 		printf ("|                           PERTANYAAN YANG SERING DIAJUKAN                       |\n");
 		printf ("|                                                                                 |\n");
-		printf ("| [A] Q : Bagaimana jika kulit saya sensitive?                                    |\n");
+		printf ("| [A] Q : Bagaimana jika kulit saya sensitif?                                    |\n");
 		printf ("|     A : Kami menyediakan banyak jenis product untuk berbagai jenis kulit,       |\n");
 		printf ("|         bila anda memiliki masalah khusus dengan kulit anda,                    |\n");
 		printf ("|         mohon diberitahukan sebelumnya                                          |\n");
@@ -639,7 +636,7 @@ void menuBantuan(void){
 		printf ("|     A : Dianjurkan batas usia minimal 12 tahun                                  |\n");
 		printf ("|                                                                                 |\n");
 		printf ("| [E] Q : Apa yang terjadi jika saya membatalkan pemesanan?                       |\n");
-		printf ("|     A : Hubungi kontak yang tertera. Pembayaran Anda bisa kembali 100%          |\n");
+		printf ("|     A : Hubungi kontak yang tertra. Pembayaran Anda bisa kembali 100 persen     |\n");
 		printf ("|         apabila Anda melakukan pembatalan dalam kurun waktu kurang dari 24 jam  |\n");
 		printf ("|         dari waktu pemesanan                                                    |\n");
 		printf ("|=================================================================================|\n");
@@ -855,69 +852,68 @@ void daftarTransaksi(void){
 
 //fungsi untuk menampilkan rincian jasa
 void tampilkanRincianJasa1(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                            ~REFLEXY~                                               |\n");
-	printf("|			                  Foot Massage With Shooting Aromatherapy		 	     	             |\n");
-	printf("|                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         			             |\n");
-	printf("|      		   Manjakan diri, hilangkan penat dan rasa lelah pada kaki cantik anda. 	             |\n");
-	printf("|			                cocok untuk anda yang aktif bergerak seharian				             |\n");
-	printf("|  Perawatan ini difokuskan pada kaki anda, yaitu pijat refleksi kaki dengan aromaterapi menenangkan |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                      | 1.5 hours Rp 190.000,- |                                    |\n");
-	printf("|****************************************************************************************************|\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                            <REFLEXY>                                               |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                             Foot Massage With Shooting Aromatherapy                                |\n");
+    printf("|                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                |\n");
+    printf("|              Manjakan diri, hilangkan penat dan rasa lelah pada kaki cantik anda.                  |\n");
+    printf("|                         cocok untuk anda yang aktif bergerak seharian                              |\n");
+    printf("|  Perawatan ini difokuskan pada kaki anda, yaitu pijat refleksi kaki dengan aromaterapi menenangkan |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                  | 1.5 hours Rp 190.000,- |                                        |\n");
+    printf("|****************************************************************************************************|\n");
 }
 
 void tampilkanRincianJasa2(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                          ~REJUVENATE~                                              |\n");
-	printf("|			            Relaxing Back Massage With Gentle Touch Of Olive Oil                         |\n");
-	printf("|                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                         |\n");
-	printf("| Kembalikan rasa energik anda, dapatkan relaksasi yang menyegarkan di setiap sentuhan minyak zaitun |\n");
-	printf("| Perawatan ini akan mengurangi rasa pegal & kelelahan pada punggung dengan pijatan lembut olive oil |\n");
-	printf("|    Sangat cocok bagi anda yang duduk seharian saat bekerja. pijatan punggung yang lembut dengan    |\n");
-	printf("|                        minyak zaitun ini akan mengembalikan vitalitas anda.                        |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                       | 1.5 Hours Rp 205.000,- |                                   |\n");
-	printf("|****************************************************************************************************|\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                          <REJUVENATE>                                              |\n");
+    printf("|                       Relaxing Back Massage With Gentle Touch Of Olive Oil                         |\n");
+    printf("|                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                         |\n");
+    printf("| Kembalikan rasa energik anda, dapatkan relaksasi yang menyegarkan di setiap sentuhan minyak zaitun |\n");
+    printf("| Perawatan ini akan mengurangi rasa pegal & kelelahan pada punggung dengan pijatan lembut olive oil |\n");
+    printf("|   Sangat cocok bagi anda yang duduk seharian saat bekerja. pijatan punggung yang lembut dengan     |\n");
+    printf("|                      minyak zaitun ini akan mengembalikan vitalitas anda.                          |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                     | 1.5 Hours Rp 205.000,- |                                     |\n");
+    printf("|****************************************************************************************************|\n");
 }
 
 void tampilkanRincianJasa3(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                           ~RECHARGE~                                               |\n");
-	printf("|   A Touch Of Peaceful Massage On The Points Of Your Face And Head, As Well As Your Beautiful Back  |\n");
-	printf("|   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  |\n");
-	printf("|  Temukan kedamaian dalam setiap sentuhan pijatan pada titik-titik wajah, kepala dan punggung anda  |\n");
-	printf("|  Perawatan ini mampu  mengurangi stress dan mengembalikan kesegaran tubuh. pemijatan akan dimulai  |\n");
-	printf("|  dari titik-titik wajah, kemudian pada kepala, lalu menuju punggung dengan paduan minyak esensial  |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                       | 1 Hour Rp 265.000,- |                                      |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                           <RECHARGE>                                               |\n");
+    printf("|   A Touch Of Peaceful Massage On The Points Of Your Face And Head, As Well As Your Beautiful Back  |\n");
+    printf("|   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  |\n");
+    printf("|  Temukan kedamaian dalam setiap sentuhan pijatan pada titik-titik wajah, kepala dan punggung anda  |\n");
+    printf("|  Perawatan ini mampu  mengurangi stress dan mengembalikan kesegaran tubuh. pemijatan akan dimulai  |\n");
+    printf("|  dari titik-titik wajah, kemudian pada kepala, lalu menuju punggung dengan paduan minyak esensial  |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                       | 1 Hour Rp 265.000,- |                                      |\n");
 	printf("|****************************************************************************************************|\n");
 }
 
 void tampilkanRincianJasa4(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                            ~REFRESH~                                               |\n");
-	printf("|                       Feel The Best Sensation Of Body Massage And Body Scrub                       |\n");
-	printf("|                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                       |\n");
-	printf("|    Rasakan sensasi terbaik dari pijatan tubuh dengan perpaduan minyak kelapa dan minyak esensial   |\n");
-	printf("|     akan memberikan anda ketenangan diri dan rasa menyegarkan, dilanjutkan baluran lulur untuk     |\n");
-	printf("|         membersihakan sel kulit mati. cocok untuk anda yang sangat sibuk dan produktif.            |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                     | 2 Hours Rp 370.000,- |                                       |\n");
-	printf("|****************************************************************************************************|\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                            <REFRESH>                                               |\n");
+    printf("|                        Feel The Best Sensation Of Body Massage And Body Scrub                      |\n");
+    printf("|                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                      |\n");
+    printf("|    Rasakan sensasi terbaik dari pijatan tubuh dengan perpaduan minyak kelapa dan minyak esensial   |\n");
+    printf("|     akan memberikan anda ketenangan diri dan rasa menyegarkan, dilanjutkan baluran lulur untuk     |\n");
+    printf("|         membersihakan sel kulit mati. cocok untuk anda yang sangat sibuk dan produktif.            |\n");
+    printf("|                                     | 2 Hours Rp 370.000,- |                                       |\n");
+    printf("|****************************************************************************************************|\n");
 }
 
 void tampilkanRincianJasa5(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                             ~RELAX~                                                |\n");
-	printf("|         Complete Your Peace Of Mind With Body & face Massage, Body Scrub, And Aromatic Bath        |\n");
-	printf("|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        |\n");
-	printf("| Perawatan terlengkap dari kami, nikmati pijatan terbaik di seluruh tubuh dan wajah anda, lembutnya |\n");
-	printf("|    lulur, serta ketenangan mandi berendam dengan wewangian aromatik, siap memanjakan jiwa anda.    |\n");
-	printf("|  untuk anda yang ingin mendapatkan kedamaian jiwa dan vitalitas yang baik, perawatan lengkap ini   |\n");
-	printf("|                                        adalah jawabannya                                           |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                         | 2.5 Hours Rp 370.000,- |                                 |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                            <RELAX>                                                 |\n");
+    printf("|         Complete Your Peace Of Mind With Body & face Massage, Body Scrub, And Aromatic Bath        |\n");
+    printf("|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        |\n");
+    printf("| Perawatan terlengkap dari kami, nikmati pijatan terbaik di seluruh tubuh dan wajah anda, lembutnya |\n");
+    printf("|     lulur, serta ketenangan mandi berendam dengan wewangian aromatik, siap memanjakan jiwa anda.   |\n");
+    printf("|   untuk anda yang ingin mendapatkan kedamaian jiwa dan vitalitas yang baik, perawatan lengkap ini  |\n");
+    printf("|                                          adalah jawabannya                                         |\n");
+    printf("|                                     | 2.5 Hours Rp 370.000,- |                                     |\n");
 	printf("|****************************************************************************************************|\n");
 }
 
@@ -1248,9 +1244,9 @@ void cetaknota(const char * namaPelanggan, const char * noHp, int i, int jumlah[
 	printf ("********************************************** \n");
 	printf ("|            KEUNTUNGAN MEMBER               | \n");
 	printf ("|                                            | \n");
-	printf ("|(1) Akan mendapat potongan setiap melakukan | \n");
-	printf ("|    layanan di Rahayu Spa                   | \n");
-	printf ("|(2) Akan mendapat bonus maupun promo setiap | \n");
+	printf ("|(1) Mendapat potongan setiap melakukan      | \n");
+	printf ("|    layanan di The Rahayu Spa               | \n");
+	printf ("|(2) Mendapat bonus maupun promo setiap      | \n");
 	printf ("|    hari-hari penting                       | \n");
 	printf ("|(3) Dapat mengikuti program-program reward  | \n");
 	printf ("|    lainnya                                 | \n");

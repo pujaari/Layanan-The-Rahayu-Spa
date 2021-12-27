@@ -16,10 +16,11 @@ void tentangKami(void){
 	system("cls");
 	int tentangKami;
 	printf ("\n\n\n\n\n\n\n\n");
-	printf ("\t\t\t\t\t\t\t\t\t    THE RAHAYU SPA\n");
-	printf ("\t\t\t\t\t\t\t\t\t      ABOUT US\n");
-	printf ("\t\t\t\t\t\t\t\t\t  --------------------\n");
-	printf ("\t\t\t\t\t\t  =================================================================\n");
+    printf ("\t\t\t\t\t\t  =================================================================\n");
+    printf ("\t\t\t\t\t\t  *                           'THE RAHAYU SPA'                    *\n");
+    printf ("\t\t\t\t\t\t  *===============================================================*\n");
+    printf ("\t\t\t\t\t\t  *                                ABOUT US                       *\n");
+	printf ("\t\t\t\t\t\t  ================================================================*\n");
 	printf ("\t\t\t\t\t\t  *    Rahayu SPA telah berdiri sejak tahun 2010 yang merupakan   *\n");
 	printf ("\t\t\t\t\t\t  *  tempat perawatan dan relaksasi dengan konsep natural modern  *\n");
 	printf ("\t\t\t\t\t\t  *   SPA. SPA yang modern dari segi design interior dan produk,  *\n");
@@ -51,7 +52,7 @@ void tentangKami(void){
 	printf ("\t\t\t\t\t\t  *   Terapi indera perasa dimana setiap customer akan disuguhi   *\n");
 	printf ("\t\t\t\t\t\t  *  minuman tradisional atau modern yang baik bagi kesehatan di  *\n");
 	printf ("\t\t\t\t\t\t  *                      akhir perawatan                          *\n");
-	printf ("\t\t\t\t\t\t  *****************************************************************\n\n\n");
+    printf ("\t\t\t\t\t\t  =================================================================\n\n\n");
 	printf ("\t\t\t\t\t\t[1] Pesan Sekarang\n");
 	printf ("\t\t\t\t\t\t[2] Kembali Ke Halaman Utama\n\n");
 	printf ("\t\t\t\t\t\tPilih : ");
@@ -68,3 +69,4 @@ void tentangKami(void){
 		goto tentangKami;
 	}
 }
+

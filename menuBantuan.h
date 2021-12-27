@@ -43,7 +43,7 @@ void menuBantuan(void){
 	printf ("|=============================================|\n");
 	printf ("|[1] TENTANG PROGRAM                          |\n");//Menjelaskan tentang program layanan spa
 	printf ("|[2] CARA MENGGUNAKAN                         |\n");//Menjelaskan cara menggunakan program layanan spa
-	printf ("|[3] FAQ                                      |\n");//Penjelasan tentang pertanyaan yang kira-kira sering diajukan customer (FAQ)
+	printf ("|[3] FAQ                                      |\n");//Penjelasan tentang pertanyaan yang kira-kira sering diajukan oleh pelanggan (FAQ)
 	printf ("|[4] RESET PROGRAM                            |\n");//fungsi ini akan mendelete semua file
 	printf ("|[5] KEMBALI                                  |\n");//Kembali pada menu utama
 	printf ("|=============================================|\n");
@@ -57,10 +57,9 @@ void menuBantuan(void){
 		system("cls");
 		header();
  		int tentangProgram;
-		printf ("|=====================================================|\n");
-		printf ("|                  * THE RAHAYU SPA *                 |\n");
-		printf ("|                    **************                   |\n");
-		printf ("|                                                     |\n");
+        printf ("=======================================================\n");
+        printf ("|                   'THE RAHAYU SPA'                  |\n");
+        printf ("|=====================================================|\n");
    		printf ("|Program ini bertujuan untuk memesan SPA dengan mudah.|\n");
    		printf ("|   Pemesanan spa ini diawali dengan sistem booking   |\n");
    		printf ("| terlebih dahulu. Setelah memesan maka customer akan |\n");
@@ -79,9 +78,9 @@ void menuBantuan(void){
 		header();
   		int caraMenggunakan;
   		printf ("\n\n");
-		printf ("|=============================================================|\n");
-		printf ("|                      * THE RAHAYU SPA *                     |\n");
-		printf ("|                        **************                       |\n");
+		printf ("==============================================================\n");
+        printf ("|                      'THE RAHAYU SPA'                       |\n");
+        printf ("|=============================================================|\n");
 		printf ("|                                                             |\n");
   	    printf ("|Inputkan angka pada menu utama sesuai kebutuhan,             |\n");
    		printf ("|Membuat akun untuk mendapatkan diskon 5 persen,              |\n");
@@ -96,9 +95,9 @@ void menuBantuan(void){
 		header();
 		int FAQ;
 		printf ("\n\n");
-		printf ("|=================================================================================|\n");
-		printf ("|                                * THE RAHAYU SPA *                               |\n");
-		printf ("|                                  **************                                 |\n");
+		printf ("===================================================================================\n");
+        printf ("|                                  'THE RAHAYU SPA'                               |\n");
+        printf ("|=================================================================================|\n");
 		printf ("|                                                                                 |\n");
 		printf ("|                           PERTANYAAN YANG SERING DIAJUKAN                       |\n");
 		printf ("|                                                                                 |\n");
@@ -122,15 +121,15 @@ void menuBantuan(void){
    		system("cls");
    		header ();
    		char input;
-   	    printf ("|=============================================================|\n");
-		printf ("|                      * THE RAHAYU SPA *                     |\n");
-		printf ("|                        **************                       |\n");
+   	    printf ("===============================================================\n");
+        printf ("|                       'THE RAHAYU SPA'                      |\n");
+        printf ("|=============================================================|\n");
 		printf ("|                                                             |\n");
-		printf ("|      Mendelete Semua data Transaksi Anda Menjadi koson      |\n");
+		printf ("|      Mendelete Semua data Transaksi Anda Menjadi kosong     |\n");
 		printf ("|                                                             |\n");
 		printf ("|                      - PERINGATAN DATA -                    |\n");
-		printf ("|                    TRANSAKSI ANDA AKAN HILANG               |\n");
-		printf ("|                DAN TIDAK BISA DIKEMBALIKAN LAGI             |\n");
+		printf ("|                   TRANSAKSI ANDA AKAN HILANG                |\n");
+		printf ("|               DAN TIDAK BISA DIKEMBALIKAN LAGI              |\n");
 		printf ("|=============================================================|\n");
 		printf ("Apakah Anda yakin ingin mereset seluruh data transaksi? (y/n): ");
 		getchar();

@@ -1,5 +1,5 @@
 # Tujuan-The-Rahayu-Spa
-- Costomer dapat melakukan pemesanan spa dengan system booking atau reservasi yang mudah dan efisien
+- Pelanggan dapat melakukan pemesanan spa dengan system booking atau reservasi yang mudah dan efisien
 
 - Pegawai dapat mengelola kasir dan absen pegawai 
 

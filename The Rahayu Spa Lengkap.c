@@ -163,7 +163,7 @@ void login(void){
 	printf("\n\t\t\t\t\tLogin sebagai : \n");
 	printf("\t\t\t\t\t[1] Pelanggan\n");
 	printf("\t\t\t\t\t[2] Pegawai\n");
-	printf("\n\n\t\t\tMasukkan pilihan anda :");
+	printf("\n\t\t\t\t\tMasukkan pilihan anda :");
 	scanf("%d",&pilihPengguna);
 
 	if(pilihPengguna == 1){ //jika milih ini maka akan masuk ke login Pelanggan
@@ -222,8 +222,8 @@ void login(void){
 		            system("cls");
 		            int loginGagal;
 		            printf("\n\t\tLOGIN GAGAL!!!\n");
-		            printf("\n\t>Pilih langkah selanjutnya : \n");
-		            printf("\n>Pilih 1 untuk keluar\n");
+		            printf("\n\tPilih langkah selanjutnya : \n");
+		            printf("\n>Pilih 1 untuk keluar<\n");
 		            printf(">>Masukan Angka acak untuk coba lagi<<\n\n");
 		            //input pilihan angka acak untuk coba lagi memasukkan username dan password
 		            printf("Pilih : ");
@@ -272,8 +272,8 @@ void login(void){
 		else{
 			int gagal;
             printf("\n\t\tLOGIN GAGAL!!!\n");
-            printf("\n\t>Pilih langkah selanjutnya : \n");
-            printf("\n>Pilih 1 untuk keluar\n");
+            printf("\n\tPilih langkah selanjutnya : \n");
+            printf("\n>Pilih 1 untuk keluar<\n");
             printf(">>Masukan Angka acak untuk coba lagi<<\n\n");
             printf("Pilih : ");
             scanf("%d",&gagal);
@@ -366,9 +366,9 @@ void menuJasa(void){
 	scanf("%i", &paket);
 
 	for(i=1; i<=paket; i++){                 //perulangan untuk memilih jasa
-		printf("\n\nPilih paket ke-%i   : " , i);
+		printf("\n\nPilih paket ke-%i : " , i);
 		scanf("%i", &menuJasa[i]);
-		printf("Jumlah             : " , i);
+		printf("Jumlah                : " , i);
 		scanf("%i", &jumlah[i]);
 		printf("\n");
 	   	// insialisasi harga dan nama jasa
@@ -474,9 +474,9 @@ void menuJasa(void){
 		gets(alamat);
 		printf("|=====================================================|\n\n");
 		printf("\n\nDetail Pemesanan\n");
-		printf("Tanggal-Bulan-Tahun Pemesanan: ");
+		printf("Tanggal-Bulan-Tahun Pemesanan  : ");
 		gets(waktu1);
-		printf("Masukan Jam                  : ");
+		printf("Masukan Jam                    : ");
 		gets(waktu2);
 		printf("|=====================================================|\n\n");
     	printf("Transaksi Anda Sudah Terdaftar\n");
@@ -627,7 +627,7 @@ void menuBantuan(void){
 		printf ("|                                                                                 |\n");
 		printf ("|                           PERTANYAAN YANG SERING DIAJUKAN                       |\n");
 		printf ("|                                                                                 |\n");
-		printf ("| [A] Q : Bagaimana jika kulit saya sensitif?                                    |\n");
+		printf ("| [A] Q : Bagaimana jika kulit saya sensitif?                                     |\n");
 		printf ("|     A : Kami menyediakan banyak jenis product untuk berbagai jenis kulit,       |\n");
 		printf ("|         bila anda memiliki masalah khusus dengan kulit anda,                    |\n");
 		printf ("|         mohon diberitahukan sebelumnya                                          |\n");
@@ -734,8 +734,8 @@ void konfirmasiPemesanan (void){
     		printf("%s ",buff);
     	}
     fclose(fpointerkuitansiPelanggan);
-    printf("[1] Konfirmasi Pembayaran\n");
-    printf("[2] Kembali\n\n");
+    printf("\t[1] Konfirmasi Pembayaran\n");
+    printf("\t[2] Kembali\n\n");
     int pilihKonfirmasi;
     printf("pilih                               : ");
     scanf("%d",&pilihKonfirmasi);
@@ -924,7 +924,7 @@ void menuPegawai(void){
 	header();
 	int menuPegawai;
 	printf ("|=============================================|\n");
-	printf ("|          T H E  R A H A Y U   S P A         \n");
+	printf ("|          T H E  R A H A Y U   S P A         |\n");
 	printf ("|=============================================|\n");
 	printf ("|[1] KASIR                                    |\n");
 	printf ("|[2] DAFTAR MEMBER                            |\n");
@@ -1065,7 +1065,7 @@ void menuKasir(void){
         scanf(" %[^\n]s",&namapaket[i][i]);
 		printf("Harga Paket %i               : Rp. ", i);
 		scanf("%i", &harga[i]);
-		printf("Jumlah                       : ");
+		printf("Jumlah                      : ");
 		scanf("%i", &jumlah[i]);
         printf(" \n");
 	}
@@ -1114,13 +1114,13 @@ void menuKasir(void){
 
 	tampilkantotalharga(totalhargakeseluruhan);
 
-	printf("DP                         : Rp. ");
+	    printf("DP                          : Rp. ");
 	scanf("%i", &DP);
 
 	int sisapembayaran = hitungsisapembayaran (totalhargakeseluruhan, DP);
 	tampilkansisapembayaran(sisapembayaran);
 
-	printf("Pembayaran                 : Rp. ");
+        printf("Pembayaran                  : Rp. ");
 	scanf("%i", &pembayaran);
 
 	int kembali = hitungkembali(pembayaran, totalhargakeseluruhan);
@@ -1134,8 +1134,8 @@ void menuKasir(void){
 
 //fungsi untuk menampilkan total harga
 void tampilkantotalharga(int totalhargakeseluruhan){
-	printf("=========================================================================================\n\n");
-	printf("Total Harga Keseluruhan     : Rp. %i\n", totalhargakeseluruhan);
+	    printf("=========================================================================================\n\n");
+	    printf("Total Harga Keseluruhan     : Rp. %i\n", totalhargakeseluruhan);
 }
 
 //fungsi untuk menghitung sisa pembayaran
@@ -1147,7 +1147,7 @@ int hitungsisapembayaran(int totalhargakeseluruhan, int DP){
 
 //fungsi untuk menampilkan sisa pembayaran
 void tampilkansisapembayaran(int sisapembayaran){
-	printf("Sisa Pembayaran	            : Rp. %i\n", sisapembayaran);
+	    printf("Sisa Pembayaran	            : Rp. %i\n", sisapembayaran);
 }
 
 //fungsi untuk menghitung kembali
@@ -1164,7 +1164,7 @@ void tampilkankembali(int kembali, int pembayaran, int sisapembayaran, int total
 		printf("Total Harga                 : Rp. %i\n", totalhargakeseluruhan);
 		printf("Pembayaran                  : Rp. %i\n", pembayaran);
 		if(pembayaran>totalhargakeseluruhan){
-			printf("Kembali                     : Rp. %i\n", kembali);
+        printf("Kembali                     : Rp. %i\n", kembali);
 		}
 		printf("========================================================\n");
 		printf ("|                      TERIMAKASIH                     |\n");
@@ -1229,7 +1229,7 @@ void cetaknota(const char * namaPelanggan, const char * noHp, int i, int jumlah[
 	printf ("|2. Member bersifat pribadi dan tidak bisa   | \n");
 	printf ("|   dipindah tangankan                       | \n");
 	printf ("|3. Setiap anggota hanya diperbolehkan       | \n");
-	printf ("|   memiliki satu akun keanggotaan dan akan  | \n");
+	printf ("|   memiliki satu akun keanggotaan dan satu  | \n");
 	printf ("|   kartu keanggotaan                        | \n");
 	printf ("|4. Untuk mendaftar menjadi member tidak     | \n");
 	printf ("|   dikenakan biaya apapun                   | \n");
@@ -1288,13 +1288,13 @@ void pendaftaranMember(){
         for (i=1; i<=member; i++){
         	printf ("\n\nMasukkan data diri pelanggan %d: ", i) ;
         	printf ("\n");
-        	printf ("\n  NAMA : ");
+        	printf ("\n  NAMA          : ");
     		scanf  (" %[^\n]s",&nama[i][i]);
-        	printf ("\n  ALAMAT : ");
+        	printf ("\n  ALAMAT        : ");
         	scanf  (" %[^\n]s",&alamat[i][i]);
         	printf ("\n  NOMOR TELEPON : ");
         	scanf  (" %[^\n]s",&telp[i][i]);
-        	printf ("\n  EMAIL MEMBER : ");
+        	printf ("\n  EMAIL MEMBER  : ");
         	scanf  (" %[^\n]s", &email[i][i]);
         	printf ("\n  STATUS MEMBER : ");
         	scanf  (" %[^\n]s", &status[i][i]);
@@ -1338,20 +1338,20 @@ void menuAbsensi(){
     printf("***************           ABSENSI PEGAWAI          ***************\n");
     printf("==================================================================\n");
 
-    printf("\nMasukkan jumlah pegawai     : ");
+    printf("\nMasukkan jumlah pegawai           : ");
     scanf("%d", &jumlah);
 
     //input untuk masing-masing pegawai seperti nama dan bulannya
     printf("\n");
     for(i=1; i<=jumlah; i++){
-        printf("Nama Pegawai ke-%i           : ", i);
-        scanf(" %[^\n]s", &pegawai[i].nama[i][i]); fflush(stdin);
-        printf("Masukkan Bulan              : ");
-        scanf("%i", &pegawai[i].bulan);
+    printf("Nama Pegawai ke-%i                 : ", i);
+    scanf(" %[^\n]s", &pegawai[i].nama[i][i]); fflush(stdin);
+    printf("Masukkan Bulan                    : ");
+    scanf("%i", &pegawai[i].bulan);
 
         if(pegawai[i].bulan==1||pegawai[i].bulan==3||pegawai[i].bulan==5||pegawai[i].bulan==7||pegawai[i].bulan==8||pegawai[i].bulan==10||pegawai[i].bulan==12){
             jumlahhari=31;                                        //jika input bulan di antara bulan 1, 3, 5, 7, 8, 10, 12 yang memiliki 31 hari maka diarahkan ke sini
-            printf("Masukkan Ketidakhadiran     : ");
+    printf("Masukkan Ketidakhadiran           : ");
             scanf("%d", &pegawai[i].alpha);
             if(pegawai[i].alpha<=31){
                 pegawai[i].total=jumlahhari-pegawai[i].alpha;
@@ -1364,7 +1364,7 @@ void menuAbsensi(){
         }
         else if(pegawai[i].bulan==4||pegawai[i].bulan==6||pegawai[i].bulan==9||pegawai[i].bulan==11){
             jumlahhari=30;                                       //jika input bulan di antara bulan 4, 6, 9, 11 yang memiliki 30 hari maka diarahkan ke sini
-            printf("Masukkan Ketidakhadiran     : ");
+            printf("Masukkan Ketidakhadiran            : ");
             scanf("%d", &pegawai[i].alpha);
             if(pegawai[i].alpha<=30){
                 pegawai[i].total=jumlahhari-pegawai[i].alpha;
@@ -1375,11 +1375,11 @@ void menuAbsensi(){
             }
         }
         else if(pegawai[i].bulan==2){                            //jika input bulan 2 maka diarahkan ke sini
-            printf("Masukkan Tahun              : ");
+            printf("Masukkan Tahun                     : ");
             scanf("%d", &tahun);
             if(tahun%4==0){
             	jumlahhari=29;                                   //jika input tahun yang habis dibagi 4(kabisat) akan diarahkan ke kondisi total jumlah hari 29
-                printf("Masukkan Ketidakhadiran     : ");
+                printf("Masukkan Ketidakhadiran                    : ");
                 scanf("%d", &pegawai[i].alpha);
                 if(pegawai[i].alpha<=29){
                 pegawai[i].total=jumlahhari-pegawai[i].alpha;
@@ -1391,7 +1391,7 @@ void menuAbsensi(){
             }
             else{
                 jumlahhari=28;
-                printf("Masukkan Ketidakhadiran     : ");
+                printf("Masukkan Ketidakhadiran : ");
                 scanf("%d", &pegawai[i].alpha);
                 if(pegawai[i].alpha<=28){                        //jika input tahun yang tidak habis dibagi 4 akan diarahkan ke kondisi total jumlah hari 28
                 pegawai[i].total=jumlahhari-pegawai[i].alpha;
@@ -1422,10 +1422,10 @@ void menuAbsensi(){
     printf("==================================================================\n");
 
     for(i=1; i<=jumlah; i++){
-        printf("%3i", i);
-        printf("%20s", &pegawai[i].nama[i][i]);
-        printf("%20d", pegawai[i].bulan);
-        printf("%20d\n", pegawai[i].total);
+    printf("%3i", i);
+    printf("%20s", &pegawai[i].nama[i][i]);
+    printf("%20d", pegawai[i].bulan);
+    printf("%20d\n", pegawai[i].total);
     }
     printf("==================================================================\n");
 
@@ -1440,10 +1440,10 @@ void menuAbsensi(){
     fprintf (fpointerabsensi, "%20s", "Periode Bulan");
     fprintf (fpointerabsensi, "%20s\n", "Total Kehadiran");
     for(i=1; i<=jumlah; i++){
-        fprintf (fpointerabsensi, "%3i", i);
-        fprintf (fpointerabsensi, "%20s", &pegawai[i].nama[i][i]);
-        fprintf (fpointerabsensi, "%20d", pegawai[i].bulan);
-        fprintf (fpointerabsensi, "%20d\n", pegawai[i].total);
+    fprintf (fpointerabsensi, "%3i", i);
+    fprintf (fpointerabsensi, "%20s", &pegawai[i].nama[i][i]);
+    fprintf (fpointerabsensi, "%20d", pegawai[i].bulan);
+    fprintf (fpointerabsensi, "%20d\n", pegawai[i].total);
     }
     fprintf (fpointerabsensi, "==================================================================\n");
     fclose (fpointerabsensi);
@@ -1491,14 +1491,14 @@ void penggajianPegawai (void){
 		scanf("%d", &gaji[i].pinjaman);
 		printf("========================================\n");
 	}
-	printf("\n\n\n\t\t\t\t\t            		         =======  GAJI KARYAWAN ======= \n");
-    printf("\t\t\t\t=======================================================================================================\n");
-    printf("\t\t\t\t  NO |    NAMA           |   GAJI POKOK   |     BONUS    |   PINJAMAN  |  TOTAL GAJI  |  GAJI BERSIH  |\n");
-    printf("\t\t\t\t=======================================================================================================\n");
+	printf("\n\n\n\t            		         =======  GAJI KARYAWAN ======= \n");
+    printf("=======================================================================================================\n");
+    printf("  NO |    NAMA           |   GAJI POKOK   |     BONUS    |   PINJAMAN  |  TOTAL GAJI  |  GAJI BERSIH  |\n");
+    printf("=======================================================================================================\n");
     for (i = 0; i < jumlah; i++){
-    	printf("\t\t\t\t  %d     %-15s        %d          %-10d     %-13d %-13d %d  \n", i + 1, gaji[i].nama, gaji[i].pokok, gaji[i].bonus, gaji[i].pinjaman, gaji[i].pokok + gaji[i].bonus, gaji[i].pokok + gaji[i].bonus - gaji[i].pinjaman);
+    printf("  %d     %-15s        %d          %-10d     %-13d %-13d %d  \n", i + 1, gaji[i].nama, gaji[i].pokok, gaji[i].bonus, gaji[i].pinjaman, gaji[i].pokok + gaji[i].bonus, gaji[i].pokok + gaji[i].bonus - gaji[i].pinjaman);
 	}
-	printf("\t\t\t\t=======================================================================================================\n");
+	printf("=======================================================================================================\n");
 
 	FILE * fPointer;
 	fPointer = fopen("Gaji Karyawan The Rahayu Spa.txt", "a+");

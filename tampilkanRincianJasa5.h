@@ -15,15 +15,14 @@
 // Direvisi Oleh  : Puja - 2105551016                                    //
 //=======================================================================//
 void tampilkanRincianJasa5(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                             ~RELAX~                                                |\n");
-	printf("|         Complete Your Peace Of Mind With Body & face Massage, Body Scrub, And Aromatic Bath        |\n");
-	printf("|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        |\n");
-	printf("| Perawatan terlengkap dari kami, nikmati pijatan terbaik di seluruh tubuh dan wajah anda, lembutnya |\n");
-	printf("|    lulur, serta ketenangan mandi berendam dengan wewangian aromatik, siap memanjakan jiwa anda.    |\n");
-	printf("|  untuk anda yang ingin mendapatkan kedamaian jiwa dan vitalitas yang baik, perawatan lengkap ini   |\n");
-	printf("|                                        adalah jawabannya                                           |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                         | 2.5 Hours Rp 530.000,- |                                 |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                            <RELAX>                                                 |\n");
+    printf("|         Complete Your Peace Of Mind With Body & face Massage, Body Scrub, And Aromatic Bath        |\n");
+    printf("|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        |\n");
+    printf("| Perawatan terlengkap dari kami, nikmati pijatan terbaik di seluruh tubuh dan wajah anda, lembutnya |\n");
+    printf("|     lulur, serta ketenangan mandi berendam dengan wewangian aromatik, siap memanjakan jiwa anda.   |\n");
+    printf("|   untuk anda yang ingin mendapatkan kedamaian jiwa dan vitalitas yang baik, perawatan lengkap ini  |\n");
+    printf("|                                          adalah jawabannya                                         |\n");
+    printf("|                                     | 2.5 Hours Rp 370.000,- |                                     |\n");
 	printf("|****************************************************************************************************|\n");
 }

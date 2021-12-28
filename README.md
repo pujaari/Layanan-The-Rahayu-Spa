@@ -6,7 +6,7 @@
 # Cara menggunakan program
 1. silahkan dowload repostory ini.
 
-2. copy-paste main.c ke text editor/IDE kalian
+2. copy-paste TheRahayuSpaLengkap.c ke text editor/IDE kalian
 
 3. lakukan proses kompilasi
 

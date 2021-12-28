@@ -14,6 +14,7 @@
 // Revisi 1       : Merapikan isi fungsi supaya lebih nyaman dilihat.    //
 // Direvisi Oleh  :  Jenni - 2105551028                                  //
 //=======================================================================//
+//fungsi untuk menampilkan rincian jasa
 void tampilkanRincianJasa1(void){
     printf("|****************************************************************************************************|\n");
     printf("|                                            <REFLEXY>                                               |\n");

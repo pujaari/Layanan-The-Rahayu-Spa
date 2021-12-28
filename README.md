@@ -1,7 +1,7 @@
 # Tujuan-The-Rahayu-Spa
 - Costomer dapat melakukan pemesanan spa dengan system booking atau reservasi yang mudah dan efisien
 
-- Staff dapat mengelola kasir dan absen pegawai 
+- Pegawai dapat mengelola kasir dan absen pegawai 
 
 # Cara menggunakan program
 1. silahkan dowload repostory ini.

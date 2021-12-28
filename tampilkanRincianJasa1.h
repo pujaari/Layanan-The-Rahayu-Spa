@@ -15,13 +15,15 @@
 // Direvisi Oleh  :  Jenni - 2105551028                                  //
 //=======================================================================//
 void tampilkanRincianJasa1(void){
-	printf("|****************************************************************************************************|\n");
-	printf("|                                            ~REFLEXY~                                               |\n");
-	printf("|			                  Foot Massage With Shooting Aromatherapy		 	     	             |\n");
-	printf("|                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         			             |\n");
-	printf("|      		   Manjakan diri, hilangkan penat dan rasa lelah pada kaki cantik anda. 	             |\n");
-	printf("|			                cocok untuk anda yang aktif bergerak seharian				             |\n");
-	printf("|  Perawatan ini difokuskan pada kaki anda, yaitu pijat refleksi kaki dengan aromaterapi menenangkan |\n");
-	printf("|****************************************************************************************************|\n");
-	printf("|                                      | 1.5 hours Rp 190.000,- |                                    |\n");
-	printf("|****************************************************************************************************|\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                            <REFLEXY>                                               |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                             Foot Massage With Shooting Aromatherapy                                |\n");
+    printf("|                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                |\n");
+    printf("|              Manjakan diri, hilangkan penat dan rasa lelah pada kaki cantik anda.                  |\n");
+    printf("|                         cocok untuk anda yang aktif bergerak seharian                              |\n");
+    printf("|  Perawatan ini difokuskan pada kaki anda, yaitu pijat refleksi kaki dengan aromaterapi menenangkan |\n");
+    printf("|****************************************************************************************************|\n");
+    printf("|                                  | 1.5 hours Rp 190.000,- |                                        |\n");
+    printf("|****************************************************************************************************|\n");
+}

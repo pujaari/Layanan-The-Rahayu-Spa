@@ -49,8 +49,8 @@ void cekPembayaran(const char * bank, int noRekening, const char * nama, int jum
 	fclose(fdaftarTransaksi);
 
 	//mendelete di konformasi pemesanan karena data sudah masuk ke daftar transaksi
-	FILE * fpointerkuitansiCostumer;
-	fpointerkuitansiCostumer=fopen(pengguna.nama,"w");
-	fprintf (fpointerkuitansiCostumer,"\n\n\nAnda Belum Melakukan Pemesanan Apapun\n\n\n");
-	fclose (fpointerkuitansiCostumer);
+	FILE * fpointerkuitansiPelanggan;
+	fpointerkuitansiPelanggan=fopen(pengguna.nama,"w");
+	fprintf (fpointerkuitansiPelanggan,"\n\n\nAnda Belum Melakukan Pemesanan Apapun\n\n\n");
+	fclose (fpointerkuitansiPelanggan);
 }

@@ -108,13 +108,13 @@ void menuKasir(void){
 
 	tampilkantotalharga(totalhargakeseluruhan);
 
-	printf("DP                          : Rp. ");
+	    printf("DP                          : Rp. ");
 	scanf("%i", &DP);
 
 	int sisapembayaran = hitungsisapembayaran (totalhargakeseluruhan, DP);
 	tampilkansisapembayaran(sisapembayaran);
 
-	printf("Pembayaran                  : Rp. ");
+        printf("Pembayaran                  : Rp. ");
 	scanf("%i", &pembayaran);
 
 	int kembali = hitungkembali(pembayaran, totalhargakeseluruhan);

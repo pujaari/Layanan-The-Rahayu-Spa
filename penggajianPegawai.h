@@ -30,20 +30,20 @@ void penggajianPegawai (void){
 	int masaKerja;
 	int i;
 	int lanjutan;
-	printf("\n\n\t\t\t\t\t========================================\n");
-	printf("\t\t\t\t\t\t\t|     PENGGAJIAN KARYAWAN RAHAYU SPA   |\n");
-	printf("\t\t\t\t\t\t\t========================================\n\n");
-	printf("============================================\n");
-	printf("MASUKKAN JUMLAH KARYAWAN YANG INGIN DIGAJI : ");
+	printf("\n\n===========================================\n");
+	printf("|    PENGGAJIAN KARYAWAN THE RAHAYU SPA   |\n");
+	printf("===========================================\n\n");
+	printf("===========================================\n");
+	printf(" MASUKKAN JUMLAH KARYAWAN YANG INGIN DIGAJI : ");
 	scanf("%d", &jumlah);
-	printf("============================================\n");
+	printf("===========================================\n");
 
 	for(i=0;i<jumlah; i++){
 		printf ("\n");
 		printf("MASUKKAN NAMA KARYAWAN KE-%d: ", i+1);
 		fflush(stdin);
 		gets (gaji[i].nama);
-		printf("=============================\n");
+		printf("========================================\n");
 		printf("MASUKKAN GAJI POKOK KARYAWAN: Rp. ");
 		scanf("%d", &gaji[i].pokok);
 		printf("MASUKKAN MASA KERJA(BULAN)  : ");
@@ -60,19 +60,19 @@ void penggajianPegawai (void){
 		}
 		printf("MASUKKAN PINJAMAN           : ");
 		scanf("%d", &gaji[i].pinjaman);
-		printf("==============================\n");
+		printf("========================================\n");
 	}
-	printf("\n\n\n\t\t\t\t\t            		         =======  GAJI KARYAWAN ======= \n");
-    printf("\t\t\t\t=======================================================================================================\n");
-    printf("\t\t\t\t  NO |    NAMA           |   GAJI POKOK   |     BONUS    |   PINJAMAN  |  TOTAL GAJI  |  GAJI BERSIH  |\n");
-    printf("\t\t\t\t=======================================================================================================\n");
+	printf("\n\n\n\t            		         =======  GAJI KARYAWAN ======= \n");
+    printf("=======================================================================================================\n");
+    printf("  NO |    NAMA           |   GAJI POKOK   |     BONUS    |   PINJAMAN  |  TOTAL GAJI  |  GAJI BERSIH  |\n");
+    printf("=======================================================================================================\n");
     for (i = 0; i < jumlah; i++){
-    	printf("\t\t\t\t  %d     %-15s        %d          %-10d     %-13d %-13d %d  \n", i + 1, gaji[i].nama, gaji[i].pokok, gaji[i].bonus, gaji[i].pinjaman, gaji[i].pokok + gaji[i].bonus, gaji[i].pokok + gaji[i].bonus - gaji[i].pinjaman);
+    printf("  %d     %-15s        %d          %-10d     %-13d %-13d %d  \n", i + 1, gaji[i].nama, gaji[i].pokok, gaji[i].bonus, gaji[i].pinjaman, gaji[i].pokok + gaji[i].bonus, gaji[i].pokok + gaji[i].bonus - gaji[i].pinjaman);
 	}
-	printf("\t\t\t\t=======================================================================================================\n");
+	printf("=======================================================================================================\n");
 
 	FILE * fPointer;
-	fPointer = fopen("Gaji Karyawan Rayuri Spa.txt", "a+");
+	fPointer = fopen("Gaji Karyawan The Rahayu Spa.txt", "a+");
 	fprintf(fPointer, "\n");
  	fprintf(fPointer ,"            		         =======  GAJI KARYAWAN ======= \n");
     fprintf(fPointer ,"=======================================================================================================\n");

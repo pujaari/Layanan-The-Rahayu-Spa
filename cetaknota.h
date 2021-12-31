@@ -26,24 +26,24 @@ void cetaknota(const char * namaPelanggan, const char * noHp, int i, int jumlah[
     time(&ambil_waktu2);
 	FILE * fpointernota2;
 	fpointernota2 = fopen ("kuitansiKasir.txt", "w+"); //write a file
-	fprintf(fpointernota2,"%s", ctime(&ambil_waktu2) );
-	fprintf (fpointernota2, "=============================================================================================================\n\n");
-	fprintf (fpointernota2, "                                                  RAHAYU SPA                                                   \n");
-	fprintf (fpointernota2, "                                        Jalan Bintang No. 295, Kota Galaksi                                    \n");
-	fprintf (fpointernota2, "                                                Telp. 08123456789                                              \n");
+	fprintf (fpointernota2,"%s", ctime(&ambil_waktu2) );
+	fprintf (fpointernota2, "==============================================================================================================\n\n");
+	fprintf (fpointernota2, "                                                 THE RAHAYU SPA                                                 \n");
+	fprintf (fpointernota2, "                                        Jalan Bintang No. 295, Kota Galaksi                                     \n");
+	fprintf (fpointernota2, "                                                Telp. 08123456789                                               \n");
 	fprintf (fpointernota2, "==============================================================================================================\n\n");
 	fprintf (fpointernota2, "Bukti Pembayaran Paket Spa\n\n");
-	fprintf (fpointernota2, "                                                                                                   Kasir : Siapa\n");
+	fprintf (fpointernota2, "Kasir                                     : Siapa\n");
 	fprintf (fpointernota2, "Nama Pelanggan                            : %s\n" , namaPelanggan);
 	fprintf (fpointernota2, "No Telepon                                : %s\n",noHp);
 	fprintf (fpointernota2, "Rincian Belanja                           :\n");
 	fprintf (fpointernota2, "----------------------------------------------------------------------------------------------------------------\n");
     for(i=1; i<=paket; i++){
-		fprintf(fpointernota2, "%i. %i %s (Rp.%i) \nRp. %i\n\n", i, jumlah[i], &namapaket[i][i], harga[i], totalharga[i]);
+    fprintf(fpointernota2, "%i. %i %s (Rp.%i) \nRp. %i\n\n", i, jumlah[i], &namapaket[i][i], harga[i], totalharga[i]);
 	}
-	fprintf (fpointernota2, "----------------------------------------------------------------------------------------------------------------\n");
+	fprintf(fpointernota2, "-----------------------------------------------------------------------------------------------------------------\n");
 	fprintf(fpointernota2, "                                               TOTAL PEMBAYARAN                                                  \n");
-	fprintf(fpointernota2, "                                                   Rp. %i\n", totalhargakeseluruhan);
-	fprintf (fpointernota2, "----------------------------------------------------------------------------------------------------------------\n");
+	fprintf(fpointernota2, "                                               Rp. %i\n", totalhargakeseluruhan);
+	fprintf(fpointernota2, "-----------------------------------------------------------------------------------------------------------------\n");
     fclose (fpointernota2);
 }

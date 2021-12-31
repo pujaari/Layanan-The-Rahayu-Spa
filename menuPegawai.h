@@ -17,12 +17,16 @@
 // Direvisi Oleh  : Puja - 2105551016                                    //
 //                                                 Rev. 2                //
 //                                                 Tgl: 10-12-2021       //
-// Revisi 1       : Menambahkan menu absen pegawai.                      //
+// Revisi 2       : Menambahkan menu absen pegawai.                      //
 // Direvisi Oleh  : Jenni - 2105551028                                   //
 //                                                 Rev. 3                //
 //                                                 Tgl: 11-12-2021       //
-// Revisi 1       : Menambahkan menu penggajian pegawai.                 //
+// Revisi 3       : Menambahkan menu penggajian pegawai.                 //
 // Direvisi Oleh  : Puja - 2105551016                                    //
+//						   Rev. 4                //
+//						   Tgl : 31-12-2021	 //
+// Revisi 4	  : Memperbarui menu pegawai                             // 
+// Direvisi Oleh  : Jenni - 2105551028                                   //
 //=======================================================================//
 
 //fungsi untuk menampilkan menu apabila login sebagai pegawai/staff
@@ -32,7 +36,7 @@ void menuPegawai(void){
 	header();
 	int menuPegawai;
 	printf ("|=============================================|\n");
-	printf ("|            R A H A Y U   S P A              |\n");
+	printf ("|          T H E  R A H A Y U   S P A         |\n");
 	printf ("|=============================================|\n");
 	printf ("|[1] KASIR                                    |\n");
 	printf ("|[2] DAFTAR MEMBER                            |\n");

@@ -39,7 +39,7 @@ void menurekomen(void){
     total=0;
     do{
    		total = total + nilai;
-        printf("Masukkan Kode Keluhan            :\n");
+        printf("Masukkan Kode Keluhan   :\n");
         scanf("%d",&nilai);
     }while (nilai != 0);
     	if((total==102)||(total==108)||(total==102+108)){

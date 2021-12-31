@@ -297,7 +297,7 @@ void menuPelanggan(void){
 	printf ("|=============================================|\n");
 	printf ("|                  MENU UTAMA                 |\n");
 	printf ("|=============================================|\n");
-	printf ("|[1] PACKAGE LIST                             |\n");
+	printf ("|[1] PEMESANAN                                |\n");
 	printf ("|[2] KONFIRMASI PEMESANAN                     |\n");
 	printf ("|[3] DAFTAR TRANSAKSI                         |\n");
 	printf ("|[4] REKOMENDASI                              |\n");
@@ -339,6 +339,7 @@ void menuPelanggan(void){
 		}
 }
 
+
 //fungsi untuk menampilkan menu jasa dan menu paket yang tersedia di spa
 void menuJasa(void){
 	menuJasa:
@@ -359,7 +360,7 @@ void menuJasa(void){
 	printf ("|[5] RELAX                   Rp.  370.000,-   |\n");
 	printf ("|=============================================|\n");
 	printf ("|[6] KEMBALI                                  |\n"); // Pilihan untuk kembali ke menu sebelumnya
-	printf ("|=============================================|\n");
+	printf ("|=============================================|\n"); // Caranya dengan memilih 1 paket dan memilih paket ke 6 dan jumlah 1 untuk keluar dari program
 
 
 	printf("Ingin memesan berapa paket? "); //untuk memilih jumlah jasa yang diinginkan
@@ -368,7 +369,7 @@ void menuJasa(void){
 	for(i=1; i<=paket; i++){                 //perulangan untuk memilih jasa
 		printf("\n\nPilih paket ke-%i : " , i);
 		scanf("%i", &menuJasa[i]);
-		printf("Jumlah                : " , i);
+		printf("\nJumlah           : " , i);
 		scanf("%i", &jumlah[i]);
 		printf("\n");
 	   	// insialisasi harga dan nama jasa
@@ -406,6 +407,9 @@ void menuJasa(void){
 			//fungsi untuk menampilkan rincian jasa 5
 			tampilkanRincianJasa5();
 			getch();
+	   	}
+	   	else if(menuJasa[i]== 6){
+	   		menuPelanggan();
 	   	}
 	   	else{
 	   		inputSalah();

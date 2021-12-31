@@ -57,19 +57,19 @@ void menuBantuan(void){
 		system("cls");
 		header();
  		int tentangProgram;
-        printf ("=======================================================\n");
-        printf ("|                   'THE RAHAYU SPA'                  |\n");
-        printf ("|=====================================================|\n");
-   		printf ("|Program ini bertujuan untuk memesan SPA dengan mudah.|\n");
-   		printf ("|   Pemesanan spa ini diawali dengan sistem booking   |\n");
-   		printf ("| terlebih dahulu. Setelah memesan maka customer akan |\n");
-   		printf ("|    membayar dp terlebih dahulu agar pesanan tidak   |\n");
-   		printf ("|    dibatalkan lalu pada saat hari yang ditentukan   |\n");
-   		printf ("|customer akan membayar penuh. Program ini dibuat agar|\n");
-   		printf ("|    customer tidak lama menunggu antrian saat ingin  |\n");
-   		printf ("|   melakukan spa sehingga tidak banyak yang komplain |\n");
-   		printf ("|            terhadap pelayanan di spa.               |\n");
-		printf ("|=====================================================|\n");
+        printf ("========================================================\n");
+        printf ("|                   'THE RAHAYU SPA'                   |\n");
+        printf ("|======================================================|\n");
+   		printf ("|Program ini bertujuan untuk memesan SPA dengan mudah. |\n");
+   		printf ("|   Pemesanan spa ini diawali dengan sistem booking    |\n");
+   		printf ("| terlebih dahulu. Setelah memesan maka pelanggan akan |\n");
+   		printf ("|    membayar dp terlebih dahulu agar pesanan tidak    |\n");
+   		printf ("|    dibatalkan lalu pada saat hari yang ditentukan    |\n");
+   		printf ("|pelanggan akan membayar penuh. Program ini dibuat agar|\n");
+   		printf ("|    pelanggan tidak lama menunggu antrian saat ingin  |\n");
+   		printf ("|   melakukan spa sehingga tidak banyak yang komplain  |\n");
+   		printf ("|            terhadap pelayanan di spa.                |\n");
+		printf ("|======================================================|\n");
    		getch ();
    		menuBantuan();
  		// Penjelasan tentang tata cara Program pemesanan SPA
@@ -101,7 +101,7 @@ void menuBantuan(void){
 		printf ("|                                                                                 |\n");
 		printf ("|                           PERTANYAAN YANG SERING DIAJUKAN                       |\n");
 		printf ("|                                                                                 |\n");
-		printf ("| [A] Q : Bagaimana jika kulit saya sensitive?                                    |\n");
+		printf ("| [A] Q : Bagaimana jika kulit saya sensitif?                                     |\n");
 		printf ("|     A : Kami menyediakan banyak jenis product untuk berbagai jenis kulit,       |\n");
 		printf ("|         bila anda memiliki masalah khusus dengan kulit anda,                    |\n");
 		printf ("|         mohon diberitahukan sebelumnya                                          |\n");
@@ -110,7 +110,7 @@ void menuBantuan(void){
 		printf ("|     A : Dianjurkan batas usia minimal 12 tahun                                  |\n");
 		printf ("|                                                                                 |\n");
 		printf ("| [E] Q : Apa yang terjadi jika saya membatalkan pemesanan?                       |\n");
-		printf ("|     A : Hubungi kontak yang tertera. Pembayaran Anda bisa kembali 100%          |\n");
+		printf ("|     A : Hubungi kontak yang tertra. Pembayaran Anda bisa kembali 100 persen     |\n");
 		printf ("|         apabila Anda melakukan pembatalan dalam kurun waktu kurang dari 24 jam  |\n");
 		printf ("|         dari waktu pemesanan                                                    |\n");
 		printf ("|=================================================================================|\n");
@@ -154,3 +154,4 @@ void menuBantuan(void){
  	}
 
 }
+

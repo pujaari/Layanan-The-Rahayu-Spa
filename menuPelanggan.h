@@ -19,7 +19,6 @@
 // Direvisi Oleh  : Puja - 2105551016                                    //
 //=======================================================================//
 
-//fungsi untuk masuk ke menu utama apabila sebelumnya di login memilih pelanggan
 void menuPelanggan(void){
 	menuPelanggan:
 	system("cls");
@@ -28,15 +27,15 @@ void menuPelanggan(void){
 	printf ("|=============================================|\n");
 	printf ("|                  MENU UTAMA                 |\n");
 	printf ("|=============================================|\n");
-	printf ("|[1] PACKAGE LIST                             |\n");
+	printf ("|[1] PEMESANAN                                |\n");
 	printf ("|[2] KONFIRMASI PEMESANAN                     |\n");
 	printf ("|[3] DAFTAR TRANSAKSI                         |\n");
 	printf ("|[4] REKOMENDASI                              |\n");
 	printf ("|[5] TENTANG KAMI                             |\n");
 	printf ("|=============================================|\n");
-	printf ("|[6] BANTUAN                                  |\n"); // Jika bingung dengan program ini, dapat menggunakan tombol bantuan
-	printf ("|[7] KELUAR                                   |\n"); // Pilihan exit yang dapat digunakan user sebagai pilihan untuk menutup program
-	printf ("=============================================== \n");
+	printf ("|[6] BANTUAN                                  |\n"); // Jika bingung dengan program ini, dapat menggunakan menu bantuan
+	printf ("|[7] KELUAR                                   |\n"); // Pilihan keluar yang dapat digunakan user sebagai pilihan untuk menutup program
+	printf ("|=============================================|\n");
 	printf ("Silahkan pilih : "); // Memilih Jasa yang diinginkan
 	scanf("%d", &menuPelanggan);
 	//memilih menu
@@ -61,7 +60,7 @@ void menuPelanggan(void){
 		else if(menuPelanggan==7){
 			system("cls");
 			system("pause");
-			printf("Anda Telah Keluar Dari Program\n");
+			printf("Anda Telah Keluar Dari Program Layanan The Rahayu Spa\n");
 			exit(0);
 		}
 		else{

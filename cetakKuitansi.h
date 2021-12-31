@@ -35,28 +35,28 @@ void cetakKuitansi(const char * namaPelanggan,const char * noHp, const char * al
     //kuitansi
     time_t ambil_waktu1;
     time(&ambil_waktu1);
-    FILE * fpointerkuitansiCostumer;
-    fpointerkuitansiCostumer=fopen(pengguna.nama, "w");
-    fprintf (fpointerkuitansiCostumer,"\n%s",ctime(&ambil_waktu1));
-    fprintf (fpointerkuitansiCostumer, "=============================================================================================================\n\n");
-    fprintf (fpointerkuitansiCostumer, "                                                  RAHAYU SPA                                                   \n");
-    fprintf (fpointerkuitansiCostumer, "                                      Jalan Bintang No. 295, Kota Galaksi                                      \n");
-    fprintf (fpointerkuitansiCostumer, "                                                Telp. 08123456789                                               \n");
-    fprintf (fpointerkuitansiCostumer, "==============================================================================================================\n\n");
-    fprintf (fpointerkuitansiCostumer, "Bukti Pemesanan Paket Spa\n\n");
-    fprintf (fpointerkuitansiCostumer, "Jadwal Pemesanan Paket                    : %s\n",waktu1);
-    fprintf (fpointerkuitansiCostumer, "Pukul                                     : %s\n",waktu2);
-    fprintf (fpointerkuitansiCostumer, "Nama Pelanggan                            : %s\n",namaPelanggan);
-    fprintf (fpointerkuitansiCostumer, "No Telepon                                : %s\n",noHp);
-    fprintf (fpointerkuitansiCostumer, "Alamat                                    : %s\n",alamat);
-    fprintf (fpointerkuitansiCostumer, "----------------------------------------------------------------------------------------------------------------\n");
+    FILE * fpointerkuitansiPelanggan;
+    fpointerkuitansiPelanggan=fopen(pengguna.nama, "w");
+    fprintf (fpointerkuitansiPelanggan,"\n%s",ctime(&ambil_waktu1));
+    fprintf (fpointerkuitansiPelanggan, "==============================================================================================================\n\n");
+    fprintf (fpointerkuitansiPelanggan, "                                                THE RAHAYU SPA                                                  \n");
+    fprintf (fpointerkuitansiPelanggan, "                                      Jalan Bintang No. 295, Kota Galaksi                                       \n");
+    fprintf (fpointerkuitansiPelanggan, "                                                Telp. 08123456789                                               \n");
+    fprintf (fpointerkuitansiPelanggan, "==============================================================================================================\n\n");
+    fprintf (fpointerkuitansiPelanggan, "Bukti Pemesanan Paket Spa\n\n");
+    fprintf (fpointerkuitansiPelanggan, "Jadwal Pemesanan Paket                    : %s\n",waktu1);
+    fprintf (fpointerkuitansiPelanggan, "Pukul                                     : %s\n",waktu2);
+    fprintf (fpointerkuitansiPelanggan, "Nama Pelanggan                            : %s\n",namaPelanggan);
+    fprintf (fpointerkuitansiPelanggan, "No Telepon                                : %s\n",noHp);
+    fprintf (fpointerkuitansiPelanggan, "Alamat                                    : %s\n",alamat);
+    fprintf (fpointerkuitansiPelanggan, "----------------------------------------------------------------------------------------------------------------\n");
  	for(i=1; i<=paket; i++){
- 		 fprintf (fpointerkuitansiCostumer, "%s\n",namaJasa[i][i]);
+    fprintf (fpointerkuitansiPelanggan, "%s\n",namaJasa[i][i]);
  	}
-    fprintf (fpointerkuitansiCostumer, "Total Harga                               : %d\n",totaljumlahharga);
-    fprintf (fpointerkuitansiCostumer, "----------------------------------------------------------------------------------------------------------------\n");
-    fprintf (fpointerkuitansiCostumer, "                                                      DP                                                        \n");
-    fprintf (fpointerkuitansiCostumer, "                                                 Rp. %d\n", totalDp);
-    fprintf (fpointerkuitansiCostumer, "----------------------------------------------------------------------------------------------------------------\n");
-    fclose  (fpointerkuitansiCostumer);
+    fprintf (fpointerkuitansiPelanggan, "Total Harga                               : %d\n",totaljumlahharga);
+    fprintf (fpointerkuitansiPelanggan, "----------------------------------------------------------------------------------------------------------------\n");
+    fprintf (fpointerkuitansiPelanggan, "                                                      DP                                                        \n");
+    fprintf (fpointerkuitansiPelanggan, "                                                 Rp. %d\n", totalDp);
+    fprintf (fpointerkuitansiPelanggan, "----------------------------------------------------------------------------------------------------------------\n");
+    fclose  (fpointerkuitansiPelanggan);
     }
